@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="doersApp">
+
+<head>
+	<title>Doers | Make it success!</title>
+	<!-- for-mobile-apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+	<!-- //for-mobile-apps -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
+
+
+
+	<script src="scripts/angular.min.js"></script>
+	<script src="scripts/angular-route.js"></script>
+	<script data-require="angular-animate@1.5.8" data-semver="1.5.8" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.18/angular-ui-router.min.js"></script>
+	<script src="scripts/script.js"></script>
+
+	<!-- Angular SCROLLS -->
+
+	<!-- start-smoth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+			});
+		});
+	</script>
+	<!-- start-smoth-scrolling -->
+</head>
+
+<body style="    overflow-x: hidden;overflow-y: hidden; height: 100vh;">
+	<div>
+
+		<nav class="navbar navbar-default pull-right" style="width: 100%;padding-right: 60px;
+		display: flex;
+		justify-content: flex-end;
+		height: 60px;  ">
+			<a class="navbar-brand" href="#">home</a>
+			<a class="navbar-brand" href="#categories">categories</a>
+			<a class="navbar-brand" href="#seller">Seller</a>
+			<a class="navbar-brand" href="#buyer">Buyer</a>
+		</nav>
+	</div>
+	<div id="main">
+		<!-- angular templating -->
+		<!-- this is where content will be injected -->
+		<div ng-view></div>
+	</div>
+
+
+	</div>
+	</div>
+
+	<!-- //Latest-tv-series -->
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<!--div class="w3ls_footer_grid">
+			<div class="col-md-6 w3ls_footer_grid_left">
+				<div class="w3ls_footer_grid_left1">
+					<h2>Subscribe to us</h2>
+					<div class="w3ls_footer_grid_left1_pos">
+						<form action="#" method="post">
+							<input type="email" name="email" placeholder="Your email..." required="">
+							<input type="submit" value="Send">
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 w3ls_footer_grid_right">
+				<a href="index.html"><h2>One<span>Movies</span></h2></a>
+			</div>
+			<div class="clearfix"> </div>
+		</div-->
+			<div class="w3ls_footer_grid1_left" style="display:flex; justify-content: center">
+				<p>&copy; 2018 Instance Movies. All rights reserved.</p>
+			</div>
+			<!--div class="col-md-7 w3ls_footer_grid1_right">
+			<ul>
+				<li>
+					<a href="genres.html">Movies</a>
+				</li>
+				<li>
+					<a href="faq.html">FAQ</a>
+				</li>
+				<li>
+					<a href="horror.html">Action</a>
+				</li>
+				<li>
+					<a href="genres.html">Adventure</a>
+				</li>
+				<li>
+					<a href="comedy.html">Comedy</a>
+				</li>
+				<li>
+					<a href="icons.html">Icons</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact Us</a>
+				</li>
+			</ul>
+		</div-->
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- //footer -->
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
